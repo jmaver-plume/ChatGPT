@@ -1,26 +1,20 @@
-//
-//  ContentView.swift
-//  ChatGPT
-//
-//  Created by Jaka Maver on 30/07/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var loadWebView: Bool = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if loadWebView {
+                WebView(url: URL(string: "https://chat.openai.com")!)
+                    .frame(minWidth: 200, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
+            }
         }
-        .padding()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.loadWebView = true
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
