@@ -4,7 +4,7 @@ This is a WebView https://chat.openai.com MacOS application without any business
 
 ## How to install
 
-1. Download `ChatGPT.zip` from the latest release `https://github.com/jmaver-plume/ChatGPT/releases`.
+1. Download `ChatGPT.zip` from the [latest release](https://github.com/jmaver-plume/ChatGPT/releases).
 2. Move `ChatGPT.app` to the `/Applications` directory.
 
 ## How to build
