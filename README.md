@@ -1,5 +1,8 @@
 # ChatGPT
 
+> [!NOTE]
+> This repository has been archived as OpenAI now provides an official desktop application for ChatGPT. For the latest features and updates, you can use the official ChatGPT desktop app available from OpenAI.
+
 This is a WebView https://chat.openai.com MacOS application without any business logic.  
 
 ## How to install
